@@ -12,18 +12,8 @@ class Logica:
     def NOT(self, a: bool) -> bool:
         return not a
     
-    def XOR(self, a, b):
-        """
-        Implementa la operación lógica XOR (OR exclusivo).
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a XOR b
-        """
-        pass
+    def XOR(self, a: bool, b: bool) -> bool:
+        return a != b
     
     def NAND(self, a, b):
         """
