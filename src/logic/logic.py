@@ -24,18 +24,8 @@ class Logica:
     def XNOR(self, a: bool, b: bool) -> bool:
         return a == b
     
-    def implicacion(self, a, b):
-        """
-        Implementa la operación lógica de implicación (a -> b).
-        
-        Args:
-            a (bool): Primer valor booleano (antecedente)
-            b (bool): Segundo valor booleano (consecuente)
-            
-        Returns:
-            bool: Resultado de la implicación
-        """
-        pass
+    def implicacion(self, a: bool, b: bool) -> bool:
+        return (not a) or b
     
     def bi_implicacion(self, a, b):
         """
