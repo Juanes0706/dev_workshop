@@ -9,17 +9,8 @@ class Logica:
     def OR(self, a: bool, b: bool) -> bool:
         return a or b
     
-    def NOT(self, a):
-        """
-        Implementa la operación lógica NOT.
-        
-        Args:
-            a (bool): Valor booleano
-            
-        Returns:
-            bool: Resultado de NOT a
-        """
-        pass
+    def NOT(self, a: bool) -> bool:
+        return not a
     
     def XOR(self, a, b):
         """
