@@ -6,18 +6,8 @@ class Logica:
     def AND(self, a: bool, b: bool) -> bool:
         return a and b 
     
-    def OR(self, a, b):
-        """
-        Implementa la operación lógica OR.
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a OR b
-        """
-        pass
+    def OR(self, a: bool, b: bool) -> bool:
+        return a or b
     
     def NOT(self, a):
         """
