@@ -32,17 +32,12 @@ class Magic:
                 return False
         return True
     
-    def generar_primos(self, n):
-        """
-        Genera una lista de números primos hasta n.
-        
-        Args:
-            n (int): Límite superior para generar primos
-            
-        Returns:
-            list: Lista de números primos hasta n
-        """
-        pass
+    def generar_primos(self, n: int) -> list:
+        primos = []
+        for i in range(2, n + 1):
+            if self.es_primo(i):
+                primos.append(i)
+        return primos
     
     def es_numero_perfecto(self, n):
         """
