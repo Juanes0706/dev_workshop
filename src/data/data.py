@@ -49,18 +49,9 @@ class Data:
       return sum(range(1, n + 1)) - sum(lista)
     
     def es_subconjunto(self, conjunto1, conjunto2):
-        """
-        Verifica si conjunto1 es subconjunto de conjunto2 sin usar set.
-        
-        Args:
-            conjunto1 (list): Posible subconjunto
-            conjunto2 (list): Conjunto principal
-            
-        Returns:
-            bool: True si conjunto1 es subconjunto de conjunto2, False en caso contrario
-        """
-        pass
-    
+       return set(conjunto1).issubset(set(conjunto2))
+     
+
     def implementar_pila(self):
         """
         Implementa una estructura de datos tipo pila (stack) usando listas.
