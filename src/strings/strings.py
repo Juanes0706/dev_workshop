@@ -11,17 +11,9 @@ class Strings:
     def invertir_cadena(self, cadena: str) -> str:
         return cadena[::-1]
     
-    def contar_vocales(self, texto):
-        """
-        Cuenta el número de vocales en una cadena.
-        
-        Args:
-            texto (str): Cadena para contar vocales
-            
-        Returns:
-            int: Número de vocales en la cadena
-        """
-        pass
+    def contar_vocales(self, cadena: str) -> int:
+        vocales = "aeiouAEIOU"
+        return sum(1 for c in cadena if c in vocales)
     
     def contar_consonantes(self, texto):
         """
