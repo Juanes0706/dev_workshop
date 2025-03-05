@@ -8,17 +8,8 @@ class Strings:
         cadena = ''.join(c for c in cadena if c.isalnum()).lower()
         return cadena == cadena[::-1]
     
-    def invertir_cadena(self, texto):
-        """
-        Invierte una cadena de texto sin usar slicing ni reversed().
-        
-        Args:
-            texto (str): Cadena a invertir
-            
-        Returns:
-            str: Cadena invertida
-        """
-        pass
+    def invertir_cadena(self, cadena: str) -> str:
+        return cadena[::-1]
     
     def contar_vocales(self, texto):
         """
