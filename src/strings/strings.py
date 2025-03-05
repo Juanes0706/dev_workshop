@@ -24,17 +24,8 @@ class Strings:
         cadena2 = ''.join(c for c in cadena2 if c.isalnum()).lower()
         return sorted(cadena1) == sorted(cadena2)
     
-    def contar_palabras(self, texto):
-        """
-        Cuenta el número de palabras en una cadena.
-        
-        Args:
-            texto (str): Cadena para contar palabras
-            
-        Returns:
-            int: Número de palabras en la cadena
-        """
-        pass
+    def contar_palabras(self, cadena: str) -> int:
+        return len(cadena.split())
     
     def palabras_mayus(self, texto):
         """
