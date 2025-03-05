@@ -1,3 +1,7 @@
+import pytest
+import math
+from src.geometric.geometric import Geometria
+
 class Geometria:
     """
     Class with geometric exercises.
