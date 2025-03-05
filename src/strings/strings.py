@@ -27,17 +27,8 @@ class Strings:
     def contar_palabras(self, cadena: str) -> int:
         return len(cadena.split())
     
-    def palabras_mayus(self, texto):
-        """
-        Pon en Mayuscula la primera letra de cada palabra en una cadena.
-        
-        Args:
-            texto (str): Cadena
-            
-        Returns:
-            str: Cadena con la primera letra de cada palabra en mayúscula
-        """
-        pass
+    def palabras_mayus(self, cadena: str) -> str:
+        return ' '.join(word.capitalize() for word in cadena.split(' '))
     
     def eliminar_espacios_duplicados(self, texto):
         """
