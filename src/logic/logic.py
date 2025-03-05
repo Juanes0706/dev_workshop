@@ -3,18 +3,8 @@ class Logica:
     Clase con métodos para realizar operaciones de lógica booleana y algoritmos.
     """
     
-    def AND(self, a, b):
-        """
-        Implementa la operación lógica AND.
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a AND b
-        """
-        pass
+    def AND(self, a: bool, b: bool) -> bool:
+        return a and b 
     
     def OR(self, a, b):
         """
