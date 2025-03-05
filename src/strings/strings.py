@@ -19,18 +19,10 @@ class Strings:
         consonantes = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
         return sum(1 for c in cadena if c in consonantes)
     
-    def es_anagrama(self, texto1, texto2):
-        """
-        Verifica si dos cadenas son anagramas (contienen exactamente los mismos caracteres).
-        
-        Args:
-            texto1 (str): Primera cadena
-            texto2 (str): Segunda cadena
-            
-        Returns:
-            bool: True si son anagramas, False en caso contrario
-        """
-        pass
+    def es_anagrama(self, cadena1: str, cadena2: str) -> bool:
+        cadena1 = ''.join(c for c in cadena1 if c.isalnum()).lower()
+        cadena2 = ''.join(c for c in cadena2 if c.isalnum()).lower()
+        return sorted(cadena1) == sorted(cadena2)
     
     def contar_palabras(self, texto):
         """
