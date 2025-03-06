@@ -55,21 +55,21 @@ class Data:
     def implementar_pila(self):
        pila = []
        return {
-            "push": pila.append,
-            "pop": pila.pop,
-            "pico": lambda: pila[-1] if pila else None,
-            "esta_vacio": lambda: len(pila) == 0
-        }
+        "push": pila.append,
+        "pop": pila.pop,
+        "peek": lambda: pila[-1] if pila else None,  
+        "is_empty": lambda: len(pila) == 0  
+    }
     
     def implementar_cola(self):
-        from collections import deque
-        cola = deque()
-        return {
-            "enqueue": cola.append,
-            "dequeue": cola.popleft,
-            "pico": lambda: cola[0] if cola else None,
-            "esta_vacio": lambda: len(cola) == 0
-        }
+      from collections import deque
+      cola = deque()
+      return {
+        "enqueue": cola.append,
+        "dequeue": cola.popleft,
+        "peek": lambda: cola[0] if cola else None,  
+        "is_empty": lambda: len(cola) == 0  
+    }
     
     def matriz_transpuesta(self, matriz):
         if not matriz:
